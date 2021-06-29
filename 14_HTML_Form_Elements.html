@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Elements</title>
+    <style>
+        div{
+            background-color: cornflowerblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            margin:5px;
+            width:400px;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <h2>Table form</h2>
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Username</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Password</label>
+                    </td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit query">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label>Select a Language</label>
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JS</option>
+                <option>AJAX</option>
+                <option>Bootstrap</option>
+                <option>Jquery</option>
+                <option>Angular JS</option>
+            </select>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label>Enter Your Message</label>
+            <textarea row="5" col="30"></textarea>
+        </form>
+    </div>
+    <div>
+        <form>
+            <label> Select a Language</label>
+            <input list="technologies" name="tech">
+            <datalist id="technologies">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JS">
+                <option value="Bootstrap">
+                <option value="AJAX">
+                <option value="Jquery">
+                <option value="Angular JS">    
+            </datalist>
+            <input type="submit" >
+        </form>
+    </div>
+    <!--
+        simple Login Form
+        Login Form with Table
+        Select Box
+        Text Area
+        DataList
+    -->
+
+
+</body>
+</html>
