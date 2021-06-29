@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        table, th, td{
+             border: 2px solid red;
+             border-collapse:collapse;
+             text-align: center;
+             padding: 10px;
+        }
+        #custom-table thead{
+            background-color: blue;
+            color: white;
+        }
+        body{
+            font-family: Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple table</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xyz</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>pqr</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table with Col Span</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th colspan="2">Name & Address</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xyz</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>pqr</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table with Row Span</h2>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th colspan="2">Name & Address</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>abc</td>
+                <td>US</td>
+            </tr>
+            <tr>
+             
+                <td>xyz</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pqr</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Custom Table</h2>
+    <table width="100%" id="custom-table">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>abc</td>
+                <td>US</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>xyz</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>pqr</td>
+                <td>UK</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--
+        simple table
+        table row span
+        table col span
+        custom table with css
+    -->
+
+
+</body>
+</html>
